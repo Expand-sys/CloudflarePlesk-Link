@@ -7,10 +7,10 @@ dotenv.config();
 let transporter = nodemailer.createTransport({
   host: process.env.HOST,
     port: 465,
-    secure: true, // true for 465, false for other ports
+    secure: true,
     auth: {
-      user: process.env.SENDER, // generated ethereal user
-      pass: process.env.SPASS, // generated ethereal password
+      user: process.env.SENDER,
+      pass: process.env.SPASS,
     },
 })
 let message = [];
@@ -116,8 +116,7 @@ async function dns(){
         length = acme.length;
         for(i in string){
           if (string[i].indexOf(acme)!=-1) {
-           // one of the substrings is in yourstring
-           records.push(string[i]) //result
+           records.push(string[i])
           }
         }
         });
