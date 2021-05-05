@@ -1,0 +1,24 @@
+{
+  "name": "cloudflareplesk-link",
+  "version": "1.0.0",
+  "description": "A Link between Cloudflare DNS and Plesk for renewing lets encrypt certificates",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Expand-sys/CloudflarePlesk-Link.git"
+  },
+  "author": "Expand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Expand-sys/CloudflarePlesk-Link/issues"
+  },
+  "homepage": "https://github.com/Expand-sys/CloudflarePlesk-Link#readme",
+  "dependencies": {
+    "dotenv": "^8.5.1",
+    "node-fetch": "^2.6.1",
+    "nodemailer": "^6.6.0"
+  }
+}
