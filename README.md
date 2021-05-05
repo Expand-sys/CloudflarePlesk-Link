@@ -7,20 +7,29 @@ Theres a few Environment variables to set before you can use it though they are 
 
 This you can get from running a quick command see below or check documentation
 `curl -X POST "https://<plesk-url>/api/v2/auth/keys" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"ip\": \"<ip you want to access from>\", \"login\": \"admin\", \"password\": \"<password>\" \"description\": \"Secret key for Administrator\"}"`
-PLESKKEY=
+
+`PLESKKEY=`
 
 Cloudflare stuff is pretty easy just add your global/key with permissions to change and view dns records, the email you use for Cloudflare and your AccountID google these if you need to know
-CLOUDKEY=
-CLOUDEMAIL=
-CLOUDACCOUNTID=
+
+`CLOUDKEY=`
+
+`CLOUDEMAIL=`
+
+`CLOUDACCOUNTID=`
 
 Plesk URL is your url that you access your plesk panel from, this can also be an ip if needed and may need the port 8443, i didnt have to but i also didnt set my plesk server up like a plebian
-PLESKURL=
 
-These last four are for sending an email to you when you are done (it takes about 30-60 seconds to do all the api calls) the email will contain a summary of the domains changed and the domains where the bot just sat around punching sand.
+`PLESKURL=`
+
+These last four are for sending an email to you when you are done (it takes about 30-60 seconds to do all the api calls) the email will contain a summary of the domains changed and the domains where the bot just sat around punching sand. email is your email you want to recieve the email, sender is the sender this can be the same as the reciever because email cool. spass is sender password and finally host is your mail host, this used port 465 by default so you will need a secure mail server to use it.
+
 `EMAIL=`
+
 `SENDER=`
+
 `SPASS=`
+
 `HOST=`
 
 
